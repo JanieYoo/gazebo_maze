@@ -1,0 +1,9 @@
+<launch>
+	<node pkg="gazebo_maze" type="robot_controller" name="robot_controller" output="screen">
+		<param name="angular_param" type="double" value="1.0" />
+	</node>
+	<node pkg="gazebo_maze" type="action_server" name="action_server" output="screen">
+	</node>
+	<node pkg="maze_starter" type="maze_starter" name="maze_starter" output="screen">
+	</node>
+</launch>
